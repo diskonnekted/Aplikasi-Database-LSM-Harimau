@@ -2,6 +2,10 @@
 
 **Hak Cipta © 2026 LSM Harimau. All Rights Reserved.**
 
+> ⚠️ **PEMBERITAHUAN VERSI BETA**
+>
+> Aplikasi ini saat ini berada dalam **Tahap Beta (Pengujian)**. Beberapa fitur mungkin masih dalam pengembangan atau penyempurnaan. Kami terus berupaya meningkatkan stabilitas dan fungsionalitas sistem. Mohon laporkan setiap bug atau kendala yang Anda temukan kepada tim pengembang untuk perbaikan segera.
+
 Aplikasi ini adalah sistem manajemen terpadu yang dibangun untuk kebutuhan operasional Lembaga Swadaya Masyarakat (LSM) Harimau. Sistem ini mengintegrasikan manajemen keanggotaan, pelaporan masyarakat, dan portal informasi dalam satu platform yang efisien dan modern.
 
 ## 🚀 Fitur Utama
