@@ -1,59 +1,120 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Aplikasi Database & Pelaporan LSM Harimau
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+**Hak Cipta © 2026 LSM Harimau. All Rights Reserved.**
 
-## About Laravel
+Aplikasi ini adalah sistem manajemen terpadu yang dibangun untuk kebutuhan operasional Lembaga Swadaya Masyarakat (LSM) Harimau. Sistem ini mengintegrasikan manajemen keanggotaan, pelaporan masyarakat, dan portal informasi dalam satu platform yang efisien dan modern.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## 🚀 Fitur Utama
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+### 1. Manajemen Keanggotaan (Member Management)
+Sistem pendataan anggota yang komprehensif mulai dari pendaftaran hingga penerbitan kartu identitas.
+-   **Pendaftaran Anggota Baru**: Form registrasi online dengan validasi data lengkap.
+-   **Database Wilayah Terintegrasi**: Pemilihan alamat menggunakan data wilayah Indonesia lengkap (Provinsi, Kota/Kabupaten, Kecamatan, Desa/Kelurahan) hingga tingkat RT/RW.
+-   **Verifikasi Anggota**: Alur verifikasi oleh admin sebelum anggota resmi aktif.
+-   **Kartu Tanda Anggota (KTA) Digital**:
+    -   Generate KTA otomatis dalam format PDF.
+    -   Dilengkapi **QR Code** unik untuk verifikasi keaslian anggota.
+    -   Desain KTA yang profesional siap cetak.
+-   **Export Data**: Fitur export data anggota ke format Excel untuk kebutuhan arsip dan pelaporan offline.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+### 2. Sistem Pelaporan Masyarakat (Public Reporting)
+Wadah bagi masyarakat dan anggota untuk menyampaikan aspirasi atau pengaduan secara transparan.
+-   **Formulir Pengaduan**: Antarmuka pelaporan yang mudah digunakan dengan dukungan upload bukti (Foto/PDF).
+-   **Opsi Privasi**: Pelapor dapat memilih untuk mempublikasikan laporan atau merahasiakannya (Anonim).
+-   **Pelacakan Status**: Monitoring status laporan secara real-time (Pending -> Escalated -> Disposition -> Investigation -> Resolved).
+-   **Alur Penanganan Laporan**:
+    -   **Disposisi**: Pimpinan dapat mendisposisikan laporan ke pengurus wilayah terkait.
+    -   **Investigasi**: Input hasil investigasi lapangan oleh tim yang ditunjuk.
+    -   **Penyelesaian**: Dokumentasi penyelesaian akhir laporan.
+-   **Transparansi Publik**: Menampilkan daftar laporan yang telah diselesaikan (jika diizinkan pelapor) sebagai bentuk transparansi kinerja LSM.
 
-## Learning Laravel
+### 3. Portal Informasi & Berita
+-   **Manajemen Berita**: CMS sederhana untuk mempublikasikan kegiatan, press release, dan artikel LSM.
+-   **Halaman Profil & Tata Tertib**: Informasi statis mengenai profil organisasi dan aturan keanggotaan.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+### 4. Manajemen Pengguna & Hak Akses
+-   **Role-Based Access Control**: Pemisahan hak akses antara Administrator, Pengurus, dan Anggota Biasa.
+-   **Dashboard Admin**: Ringkasan statistik anggota dan laporan masuk dalam bentuk grafik visual.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## 🛠️ Teknologi yang Digunakan
 
-## Laravel Sponsors
+Aplikasi ini dibangun menggunakan teknologi web modern untuk menjamin performa, keamanan, dan kemudahan pengembangan:
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+-   **Backend**: [Laravel Framework](https://laravel.com) (PHP) - Framework PHP terpopuler yang aman dan robust.
+-   **Frontend**:
+    -   [Blade Templates](https://laravel.com/docs/blade): Templating engine bawaan Laravel.
+    -   [Tailwind CSS](https://tailwindcss.com): Utility-first CSS framework untuk desain UI yang modern dan responsif.
+    -   [Alpine.js](https://alpinejs.dev): Framework JavaScript ringan untuk interaktivitas UI (Dropdown wilayah, modal, dll).
+-   **Database**: MySQL / MariaDB.
+-   **Libraries Utama**:
+    -   `laravolt/indonesia`: Database wilayah Indonesia lengkap.
+    -   `barryvdh/laravel-dompdf`: Generator PDF untuk KTA.
+    -   `simplesoftwareio/simple-qrcode`: Generator QR Code.
+    -   `maatwebsite/excel`: Export/Import data Excel.
 
-### Premium Partners
+## 📦 Instalasi & Pengaturan
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+Ikuti langkah-langkah berikut untuk menjalankan aplikasi di lingkungan lokal (Localhost):
 
-## Contributing
+### Prasyarat
+-   PHP >= 8.2
+-   Composer
+-   Node.js & NPM
+-   MySQL Database
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+### Langkah Instalasi
+1.  **Clone Repository**
+    ```bash
+    git clone https://github.com/diskonnekted/Aplikasi-Database-LSM-Harimau.git
+    cd Aplikasi-Database-LSM-Harimau
+    ```
 
-## Code of Conduct
+2.  **Install Dependencies**
+    ```bash
+    composer install
+    npm install
+    ```
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+3.  **Konfigurasi Environment**
+    Salin file `.env.example` menjadi `.env` dan sesuaikan konfigurasi database Anda.
+    ```bash
+    cp .env.example .env
+    ```
+    Buka file `.env` dan atur:
+    ```
+    DB_DATABASE=lsmharimau
+    DB_USERNAME=root
+    DB_PASSWORD=
+    ```
 
-## Security Vulnerabilities
+4.  **Generate Application Key**
+    ```bash
+    php artisan key:generate
+    ```
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+5.  **Migrasi Database & Seeding**
+    Jalankan migrasi untuk membuat tabel dan mengisi data wilayah Indonesia (proses ini mungkin memakan waktu beberapa saat karena banyaknya data wilayah).
+    ```bash
+    php artisan migrate --seed
+    php artisan laravolt:indonesia:seed
+    ```
 
-## License
+6.  **Compile Assets**
+    ```bash
+    npm run build
+    ```
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+7.  **Jalankan Server**
+    ```bash
+    php artisan serve
+    ```
+    Aplikasi dapat diakses di `http://localhost:8000`.
+
+## 📄 Lisensi & Hak Cipta
+
+**Hak Cipta © 2026 LSM Harimau.**
+
+Seluruh kode sumber, desain, dan aset dalam aplikasi ini adalah properti intelektual dari LSM Harimau. Dilarang keras menyalin, memodifikasi, mendistribusikan ulang, atau menggunakan bagian manapun dari aplikasi ini untuk tujuan komersial tanpa izin tertulis dari LSM Harimau.
+
+---
+*Dibuat dan dikembangkan oleh Tim IT LSM Harimau.*
