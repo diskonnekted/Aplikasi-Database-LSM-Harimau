@@ -1,0 +1,13 @@
+- Email: admin@harimau.org
+- Password: password
+nama, jabatan, wilayah, status, no kta. aksi: kta, edit, detil, delete
+buatkan manajemen user untuk crud user yang berhak login ke dalam aplikasi.
+buatkan form pelaporan masyarakat (beserta manajemen laporan di dasbor admin. form berisi:
+- nama pelapor
+- no whatsapp/ telpon
+- alamat
+- status: anggota/ masyarakat biasa/ asn atau lembaga
+- judul laporan
+- isi laporan
+- pernyataan kebenaran
+- tombol kirim
