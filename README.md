@@ -117,4 +117,4 @@ Ikuti langkah-langkah berikut untuk menjalankan aplikasi di lingkungan lokal (Lo
 Seluruh kode sumber, desain, dan aset dalam aplikasi ini adalah properti intelektual dari LSM Harimau. Dilarang keras menyalin, memodifikasi, mendistribusikan ulang, atau menggunakan bagian manapun dari aplikasi ini untuk tujuan komersial tanpa izin tertulis dari LSM Harimau.
 
 ---
-*Dibuat dan dikembangkan oleh Tim IT LSM Harimau.*
+*Dibuat dan dikembangkan oleh Clasnet Group untuk LSM Harimau.*
